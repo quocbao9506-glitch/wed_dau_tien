@@ -1,0 +1,159 @@
+/* Reset nhỏ + ảnh co giãn */
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #3333ff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background: #e6e9ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a:hover {
+  color: #3333ff;
+}
+
+.content {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* BREAKPOINT 1: <= 768px (tablet & điện thoại xoay ngang) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 94%;
+    gap: 16px;
+  }
+
+  header, footer {
+    text-align: center;
+  }
+}
+
+/* BREAKPOINT 2: <= 480px (điện thoại dọc) */
+@media (max-width: 480px) {
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
+  p, li, nav a { font-size: 0.95rem; }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 6px;
+  }
+
+  .sidebar, .content {
+    padding: 12px;
+  }
+}
+.contact {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #3333ff;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0000cc;
+}
